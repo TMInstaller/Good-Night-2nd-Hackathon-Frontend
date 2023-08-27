@@ -2,6 +2,7 @@
     import Router from "svelte-spa-router";
 
     // page imports
+    import OnBoardingPage from "./pages/onboarding/OnBoardingPage.svelte";
     import HomePage from "./pages/home/HomePage.svelte";
     import AdminPage from "./pages/admin/AdminPage.svelte";
     import movieListPage from "./pages/movieList/movieListPage.svelte";
@@ -11,7 +12,8 @@
 
     // route definitions
     let routes = {
-        "/": HomePage,
+        "/": OnBoardingPage,
+        "/home": HomePage,
         "/admin": AdminPage,
         "/movie/list": movieListPage,
         "/movie/add": movieAddPage,
